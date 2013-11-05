@@ -54,6 +54,7 @@
 
 <script async="" src="./slides_files/analytics.js"></script><script type="text/javascript" src="./slides_files/dataset-shim.js"></script>
 <script type="text/javascript" src="./slides_files/impress.js"></script>
+<script type="text/javascript" src="./slides_files/impressConsole.js"></script>
 
 <script src="./slides_files/onready.js"></script>
 <script src="./slides_files/loadPresentation.js"></script>
@@ -64,11 +65,14 @@ ready(function() {
 
     if (!window.presStarted) {
         startPres(document, window);
-        impress().init();   
+        impress().init();
+        impressConsole().init(css="./slides_files/impressConsole.css");
+        // automatically open speaker console
+        impressConsole().open();
     }
 
-    if ("ontouchstart" in document.documentElement) { 
-        document.querySelector(".hint").innerHTML = 
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML =
             "<p>Tap on the left or right to navigate</p>";
     }
 });

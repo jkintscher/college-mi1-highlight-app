@@ -18,11 +18,11 @@
 % -----------------------------------------------------------------------
 % Main macros
 
-\renewcommand{\maketitle}[8]
-          {\@maketitle{#1}{#2}{#3}{#4}{#5}{#6}{#7}{#8}}
+\renewcommand{\maketitle}[6]
+          {\@maketitle{#1}{#2}{#3}{#4}{#5}{#6}}
 \renewcommand\thesection{\alph{section})}
 
-\renewcommand{\@maketitle}[9]
+\renewcommand{\@maketitle}[7]
 {\begin{tabular}{p{7cm}|r}
 
 \begin{tabular}{l}

@@ -1,1 +1,7 @@
 assets/img/psd/
+*.aux
+*.blg
+*.log
+*.gz
+*.bbl
+*.dvi
